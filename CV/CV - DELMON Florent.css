@@ -1,0 +1,127 @@
+/* Premier essaie de CV en HTML5 + CSS3*/
+body
+{
+	background: url("images/Violet0.jpg") scroll repeat-x 0px 22px,
+	url("images/Marbre.jpg") scroll repeat;
+}
+
+@font-face
+{
+	font-family: 'AR BERKLEY Moyen';
+	src: url('AR BERKLEY Moyen.ttf');
+}
+
+p
+{
+	padding: 0px 1px 0px 1px;
+}
+
+h3
+{	
+	font-family: 'AR BERKLEY Moyen', Arial;
+	border: 2px black double;
+	box-shadow: 2px 2px 4px black;
+	border-radius: 8px;
+	color: #8000D5;
+	text-align: center;
+}
+
+h4
+{
+	font-family: 'AR BERKLEY Moyen', Arial;
+	color: #8000D5;
+	text-align: center;
+
+}
+
+a:hover
+{
+	color: green;
+}
+
+a:visited
+{
+	color: red;
+}
+
+.nom
+{
+	position: absolute;
+	top: 40px;
+	left: 150px;
+}
+
+.texte01
+{
+	font-size: 2.0em;
+}
+
+.texte02
+{
+	font-size: 1.4em;
+}
+
+.description
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+.loisirs
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border: 2px black double;
+	box-shadow: 2px 2px 4px black;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.fin
+{
+	background-color: orange;
+	border: 2px black double;
+	box-shadow: 2px 2px 4px black;
+	border-radius: 8px;
+	text-align: center;
+}
+
+
+/* Mode responsive */
+@media all and (max-width: 980px)
+{
+	.txtcolor
+	{
+		color: blue;
+		font-size: 1.1em;
+	}
+
+	.description
+	{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: auto;
+	}
+
+	.fin
+	{
+		background-color: transparent;
+	}
+
+	a:hover
+	{
+		color: black;
+	}
+
+	a:visited
+	{
+		color: brown;
+	}
+	
+	body
+	{
+		background: url("images/Marbre.jpg") scroll repeat;
+	}
+}
